@@ -249,7 +249,7 @@ class HttpRailAdapter(Adapter):
         base_url: str,
         *,
         api_key: str | None = None,
-        tenant_id: str = "mobluehq-bench",
+        tenant_id: str = "demo",
         timeout: float = 60.0,
     ) -> None:
         self.base_url = base_url.rstrip("/")
@@ -330,8 +330,10 @@ class OpenAICompatibleBaseline(Adapter):
             "temperature": 0.0,
         }
         with httpx.Client(timeout=self.timeout) as client:
+            base = self.base_url.rstrip("/")
+            path = "/chat/completions" if base.endswith("/v1") else "/v1/chat/completions"
             resp = client.post(
-                f"{self.base_url}/v1/chat/completions",
+                f"{base}{path}",
                 json=payload,
                 headers=headers,
             )

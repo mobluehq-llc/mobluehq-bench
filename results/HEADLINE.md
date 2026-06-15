@@ -1,6 +1,6 @@
 # Process-Integrity Benchmark — Headline Numbers
 
-**Artifact for business plan / design-partner diligence**  
+**NON-REAL — harness demo only. Numbers are from a scripted/mock council (returns a fixed answer) and must NOT appear in the business plan or any design-partner material. Real numbers require council_mode: live against the production council.**  
 **Run:** seed `42`, mock-rail vs mock-baseline (80-item fixture slice)  
 **Re-run:** `bench run --rail mock-rail --baseline mock-baseline --seed 42 --output results/runs/latest`
 
