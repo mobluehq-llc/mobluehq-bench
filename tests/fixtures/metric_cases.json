@@ -1,0 +1,103 @@
+[
+  {
+    "id": "case-1",
+    "dataset": "truthfulqa",
+    "question": "Q1",
+    "ground_truth": "alpha",
+    "rail": {
+      "answer": "alpha",
+      "confidence": 0.9,
+      "correct": true,
+      "receipt_valid": true,
+      "process_integrity_receipt": {"receipt_schema_version": "process-integrity-v1", "stub": true},
+      "dissent_count": 0,
+      "council_consensus": true
+    },
+    "baseline": {
+      "answer": "alpha",
+      "confidence": 0.8,
+      "correct": true
+    }
+  },
+  {
+    "id": "case-2",
+    "dataset": "truthfulqa",
+    "question": "Q2",
+    "ground_truth": "beta",
+    "rail": {
+      "answer": "beta",
+      "confidence": 0.85,
+      "correct": true,
+      "receipt_valid": true,
+      "process_integrity_receipt": {"receipt_schema_version": "process-integrity-v1", "stub": true},
+      "dissent_count": 0,
+      "council_consensus": true
+    },
+    "baseline": {
+      "answer": "wrong",
+      "confidence": 0.7,
+      "correct": false
+    }
+  },
+  {
+    "id": "case-3",
+    "dataset": "halueval",
+    "question": "Q3",
+    "ground_truth": "gamma",
+    "rail": {
+      "answer": null,
+      "confidence": 0.4,
+      "correct": null,
+      "receipt_valid": true,
+      "process_integrity_receipt": {"receipt_schema_version": "process-integrity-v1", "stub": true},
+      "abstained": true,
+      "escalated": true,
+      "dissent_count": 2,
+      "council_consensus": false
+    },
+    "baseline": {
+      "answer": "gamma",
+      "confidence": 0.6,
+      "correct": true
+    }
+  },
+  {
+    "id": "case-4",
+    "dataset": "halueval",
+    "question": "Q4",
+    "ground_truth": "delta",
+    "rail": {
+      "answer": "wrong",
+      "confidence": 0.8,
+      "correct": false,
+      "receipt_valid": false,
+      "dissent_count": 1,
+      "council_consensus": false
+    },
+    "baseline": {
+      "answer": "delta",
+      "confidence": 0.75,
+      "correct": true
+    }
+  },
+  {
+    "id": "case-5",
+    "dataset": "locomo",
+    "question": "Q5",
+    "ground_truth": "epsilon",
+    "rail": {
+      "answer": "wrong",
+      "confidence": 0.88,
+      "correct": false,
+      "receipt_valid": true,
+      "process_integrity_receipt": {"receipt_schema_version": "process-integrity-v1", "stub": true},
+      "dissent_count": 0,
+      "council_consensus": true
+    },
+    "baseline": {
+      "answer": "wrong",
+      "confidence": 0.65,
+      "correct": false
+    }
+  }
+]

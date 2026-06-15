@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "seed_default": 42,
+  "datasets": [
+    {
+      "id": "truthfulqa",
+      "name": "TruthfulQA (fixture slice)",
+      "source_url": "https://github.com/sylinrl/TruthfulQA",
+      "license": "Apache-2.0",
+      "citation": "Lin, S., Hilton, J., & Evans, O. (2022). TruthfulQA: Measuring How Models Mimic Human Falsehoods.",
+      "fixture": "data/fixtures/truthfulqa_slice.jsonl",
+      "full_size": 817,
+      "fixture_size": 30
+    },
+    {
+      "id": "halueval",
+      "name": "HaluEval QA (fixture slice)",
+      "source_url": "https://github.com/RUCAIBox/HaluEval",
+      "license": "MIT",
+      "citation": "Junyi Li et al. (2023). HaluEval: A Large-Scale Hallucination Evaluation Benchmark.",
+      "fixture": "data/fixtures/halueval_qa_slice.jsonl",
+      "full_size": 10000,
+      "fixture_size": 30
+    },
+    {
+      "id": "locomo",
+      "name": "LoCoMo long-memory (fixture slice)",
+      "source_url": "https://github.com/snap-research/locomo",
+      "license": "CC-BY-4.0",
+      "citation": "Maharana et al. (2024). Evaluating Very Long-Term Conversational Memory of LLM Agents.",
+      "fixture": "data/fixtures/locomo_slice.jsonl",
+      "full_size": 600,
+      "fixture_size": 20
+    }
+  ]
+}
